@@ -392,7 +392,7 @@ flowchart TD
 
 | Versão | Data | Autor | Modigicação |
 | - | - | - | - |
-| 1.0.0 | 2026-04-14 | GabrielQueiroz31 | Versão Incial |
+| 1.0.0 | 2026-04-14 | LuanBasani, Gabriel, Aelikdan, JholDrop | Versão Incial |
 
 
 ### 7.1 Aprovações
