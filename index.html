@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quitanda MVC</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Sistema da Quitanda</h1>
+    <p>Controle simples de produtos, vendas e estoque.</p>
+
+    <div id="notification"></div>
+
+    <section>
+        <h2>Cadastrar Produto</h2>
+
+        <label>Nome do produto:</label>
+        <input type="text" id="input-name" placeholder="Ex: Banana">
+
+        <label>Categoria:</label>
+        <input type="text" id="input-category" placeholder="Ex: Fruta">
+
+        <label>Preço:</label>
+        <input type="number" id="input-price" placeholder="Ex: 5.50">
+
+        <label>Quantidade:</label>
+        <input type="number" id="input-quantity" placeholder="Ex: 10">
+
+        <button id="btn-add-product">Cadastrar</button>
+    </section>
+
+    <section>
+        <h2>Registrar Venda</h2>
+
+        <label>Nome do produto:</label>
+        <input type="text" id="sell-name" placeholder="Ex: Banana">
+
+        <label>Quantidade:</label>
+        <input type="number" id="sell-quantity" placeholder="Ex: 2">
+
+        <button id="btn-sell-product">Vender</button>
+    </section>
+
+    <section>
+        <h2>Estoque</h2>
+
+        <table>
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            </tr>
+        </thead>
+
+        <tbody id="stock-table-body">
+            <tr>
+            <td colspan="5">Nenhum produto cadastrado.</td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Histórico de Movimentações</h2>
+
+        <table>
+        <thead>
+            <tr>
+            <th>Data / Hora</th>
+            <th>Tipo</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            </tr>
+        </thead>
+
+        <tbody id="history-table-body">
+            <tr>
+            <td colspan="4">Nenhuma movimentação registrada.</td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
